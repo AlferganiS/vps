@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test CSS Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1em;
+        text-align: center;
+      }
+      main {
+        padding: 2em;
+      }
+      footer {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Test CSS Page</h1>
+    </header>
+    <main>
+      <p>This is a simple HTML page with some basic CSS styling.</p>
+    </main>
+    <footer>
+      <p id="test">&copy; 2023 Test CSS Page</p>
+    </footer>
+    <script>
+      async function main() {
+        var frame;
+
+        const prom = new Promise((resolve, reject) => {
+          frame = document.createElement("iframe");
+
+          frame.onload = function () {
+            console.log(
+              "CSSInnerProps",
+              "frame.contentWindow.results",
+              frame.contentWindow.results
+            );
+            ret = {
+              result: frame.contentWindow.results,
+            };
+
+            resolve(ret); // Resolve the Promise with the result
+          };
+
+          frame.onerror = function (error) {
+            console.error("Iframe failed to load:", error);
+            reject(new Error("Iframe failed to load"));
+          };
+
+          frame.src = "/browser/static/inner_props.html";
+          frame.style.visibility = "hidden";
+        });
+
+        document.body.appendChild(frame);
+
+        ret = await prom;
+
+        var testEl = document.getElementById("test");
+        testEl.innerHTML = "Result from inner_props --> " + ret.result;
+
+        document.body.removeChild(frame);
+
+        console.log("Result from inner_props --> ", ret);
+      }
+
+      main();
+    </script>
+  </body>
+</html>
