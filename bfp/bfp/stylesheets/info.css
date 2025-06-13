@@ -1,0 +1,9 @@
+[rel="popover"] {
+    cursor: pointer;
+    display: inline-block;
+    /* chrome-fix */
+}
+
+td:nth-child(3) {
+    word-break: break-all;
+}

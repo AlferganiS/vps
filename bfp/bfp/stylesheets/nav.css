@@ -1,0 +1,31 @@
+.nav__tabs .nav__primary {
+    display: flex;
+}
+
+.nav__tabs .nav__primary>li {
+    flex-grow: 1;
+}
+
+.nav__tabs:not(.--jsfied) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav__tabs {
+    position: relative;
+}
+
+.nav__tabs .nav__secondary {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.nav__tabs.--show-secondary .nav__secondary {
+    display: block;
+}
+
+.nav__tabs .--hidden {
+    display: none;
+}

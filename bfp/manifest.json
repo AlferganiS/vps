@@ -1,0 +1,21 @@
+{
+    "name": "Simple PWA",
+    "short_name": "PWA",
+    "start_url": "/main.php",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2b5797",
+    "icons": [
+      {
+        "src": "images/pwa-icon 128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "images/pwa-icon 512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

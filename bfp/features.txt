@@ -1,0 +1,70 @@
+Audio Formats
+Audio Context
+Analyser Node
+Audio Data
+Battery
+Build ID
+Canvas
+Cookies
+Do Not Track
+Font Flash
+Resolution Flash
+Language Flash
+Platform Flash
+Fonts
+Keyboard
+Languages
+Media Devices
+Public IP
+Navigator Properties
+Product
+Product Sub
+Vendor
+VendorSub
+hardware Concurrency
+Java Enabled
+device Memory
+Permissions
+Platform
+Plugins
+Screen Width
+Screen Height
+Screen Depth
+Screen AvailTop
+Screen AvailLeft
+Screen AvailHeight
+Screen AvailWidth
+Screen Left
+Screen Top
+Accelerometer
+Gyroscope
+Proximity Sensor
+Storage Local
+Storage Session
+Storage IndexedDB
+Storage Usage
+Storage Quota
+Timezone
+User Agent
+Video Formats
+WebGL Vendor
+WebGL Renderer
+WebGL Data
+WebGL Parameters
+window Properties
+Emoji Fingerprint
+Adblock Detection
+Canvas JPEG
+Connection
+Device ClockSpeed
+Request Animation Frame
+Math Routines
+Math ML
+HTMLElement.CanPlayType
+getClientRects Star Echo
+API Errors
+Feature Detection (API Support)
+Feature Detection (HTML5Test)
+Feature Detection (CanIUse)
+
+
