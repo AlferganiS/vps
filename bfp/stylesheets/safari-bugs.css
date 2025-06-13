@@ -1,0 +1,38 @@
+/* Test: rem units in media queries */
+@media (min-width: 10rem) {
+    body::after {
+        content: "rem bug detected";
+        display: block;
+        color: red;
+    }
+}
+
+/* Test: Fractional pixel rounding */
+.test-fractional-pixel {
+    min-width: 200.5px;
+    display: inline-block;
+}
+
+/* Test: Fixed positioning under Safari tab bar */
+.test-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/* Test: Hover state behavior on touch */
+.test-hover:hover {
+    background-color: green;
+}
+
+/* Test: -webkit-overflow-scrolling */
+.test-scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    height: 200px;
+    width: 100px;
+    background-color: lightblue;
+}
